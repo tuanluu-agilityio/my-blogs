@@ -10,6 +10,9 @@ export const siteTitle = 'My Blog!'
 const Layout = ({ 
   children,
   home
+}: {
+  children: React.ReactNode
+  home?: boolean
 }) => {
   return (
     <div className={styles.container}>
@@ -33,7 +36,7 @@ const Layout = ({
           <>
             <Image
               priority
-              src="/images/profile2.jpg"
+              src="/images/profile.jpg"
               className={utilStyles.borderCircle}
               height={144}
               width={144}
@@ -47,7 +50,7 @@ const Layout = ({
               <a>
                 <Image
                   priority
-                  src="/images/profile2.jpg"
+                  src="/images/profile.jpg"
                   className={utilStyles.borderCircle}
                   height={108}
                   width={108}
